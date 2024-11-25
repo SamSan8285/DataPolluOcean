@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataPolluOcean</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
 </head>
 <body>
-    <h1>DATA POLLUOCEAN</h1>
+    <section>
+        <div>img</div>
+        <div>
+            <h1>Data PolluOcean</h1>
+        </div>
+    </section>
 
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
+    <main>
+        <section>
+            <h2>La Pollution Océanique</h2>
+            <p>Bienvenue sur Data PolluOcean, votre plateforme dédiée à la sensibilisation et à la compréhension de la pollution océanique mondiale. Chaque année, des millions de tonnes de déchets finissent dans nos océans, impactant gravement la faune marine et l'équilibre de notre écosystème. Grâce à des visualisations de données précises et interactives, nous vous invitons à explorer la réalité de cette pollution, à prendre conscience de son ampleur et à découvrir comment les actions humaines influencent l'environnement marin. Notre objectif est d’éduquer, d’informer et de motiver un changement positif pour protéger nos océans.</p>
+        </section>
 
+        <section>
+            <h2>Vidéo</h2>
+            <p></p>
+            <video src=""></video>
+        </section>
+        
+        <section>
+            <h2>Pollution Global</h2>
+            <p>Ce graphique montre la quantité de déchets plastiques rejetés dans les océans par habitant en 2019. En examinant ces données par pays, nous pouvons mieux comprendre l'impact spécifique des populations sur la pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir des initiatives globales de réduction de la pollution plastique.</p>
+            <canvas></canvas>
+        </section>
+
+        <section>
+            <h2>Carte interactive</h2>
+            <p></p>
+            <canvas></canvas>
+        </section>
+
+        <section>
+            <H2>Rejoignez notre cause</H2>
+            <p>Pour plus d'informations consulter les sites répertorié dans notre page <a href="sources.html">source</a></p>
+        </section>
+    </main>
+    
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     const ctx = document.getElementById('myChart');
@@ -36,6 +68,15 @@
     });
   </script>
 
-
+  <footer>
+        <a href="mention.html">Mention légales</a>
+        <a href="sources.html">Nos sources</a>
+        <h2>Contact</h2>
+        <p>
+            Si vous avez des questions, des suggestions, ou souhaitez en savoir plus sur notre projet, n'hésitez pas à nous contacter via les informations ci-dessous.
+             <br> Contactez-nous : <br> Email : scolarite.iut@listes.univ-eiffel.fr <br> Téléphone : 01 60 95 75 00 <br> Adresse : 5 Bd Descartes, 77420 Champs-sur-Marne <br>
+            Merci d'utiliser Data PolluOcean. Ensemble, luttons pour des océans plus propres et un avenir durable.
+        </p>
+    </footer>
 </body>
 </html>
