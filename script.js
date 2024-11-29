@@ -1,5 +1,5 @@
 fetch(
-    `Microplastic.csv`
+    `Microplastic.json`
   ).then((d) =>
     d.json().then(function (data) {
       console.log(data);
