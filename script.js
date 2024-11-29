@@ -8,3 +8,4 @@ fetch(
 
 const donnees = data.attributes;
     console.log(donnees);
+    
