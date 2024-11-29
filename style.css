@@ -12,7 +12,7 @@
         align-items: center;
         background-image: url(img/DataPolluOcean.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     
     .container {
