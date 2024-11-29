@@ -29,15 +29,14 @@
         <section>
             <h2>Pollution Global</h2>
             <p>Ce graphique montre la quantité de déchets plastiques rejetés dans les océans par habitant en 2019. En examinant ces données par pays, nous pouvons mieux comprendre l'impact spécifique des populations sur la pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir des initiatives globales de réduction de la pollution plastique.</p>
-            <canvas></canvas>
+            <canvas id="myChart"></canvas>
         </section>
 
         <section>
             <h2>Carte interactive</h2>
             <p></p>
-            <canvas></canvas>
         </section>
-
+          <canvas></canvas>
         <section>
             <H2>Rejoignez notre cause</H2>
             <p>Pour plus d'informations consulter les sites répertorié dans notre page <a href="sources.html">source</a></p>
@@ -51,9 +50,9 @@
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
         datasets: [{
-          label: '# of Votes',
+          label: 'Concentration de Microplastiques au M3',
           data: [12, 19, 3, 5, 2, 3],
           borderWidth: 1
         }]
