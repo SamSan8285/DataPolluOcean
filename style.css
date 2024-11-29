@@ -1,9 +1,37 @@
 /*Index.html*/
-
-
-
-/*Mention légales*/
-
-
-
-/*Sources*/
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    header {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/DataPolluOcean.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .container h1 {
+        margin-left: 30px;
+    }
+    
+    section {
+        height: 100vh;
+    }
+    
+    
+    
+    /*Mention légales*/
+    
+    
+    
+    /*Sources*/
