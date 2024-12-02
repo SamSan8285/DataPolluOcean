@@ -7,14 +7,12 @@
     
     header {
         display: flex;
-        height: 100vh;
-        width: 100%;
+        height: 120vh;
         justify-content: center;
         align-items: center;
-        background-image: url(./img/DataPolluOcean.svg);
+        background-image: url(img/DataPolluOcean.svg);
         background-repeat: no-repeat;
         background-size: cover;
-  
     }
     
     .container {
@@ -25,13 +23,75 @@
     .container h1 {
         margin-left: 30px;
     }
-    
-    section {
-        height: 100vh;
+
+    .bande {
+        height: 10vh;
+        background-color: black;
+    }
+
+    .intro {
+        justify-content: center;
     }
     
+    .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     
+    video {
+        border-radius: 20px;
+    }
     
+    .graphique {
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cause{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    footer {
+        display: flex;
+        height: 30vh;
+        background-color: rgb(1, 24, 37);
+        
+    }
+
+    footer p {
+        color: white;
+    }
+
+    footer h2 {
+        color: white;
+    }
+    
+    footer div {
+        margin: 15px;
+    }
+
+    .text_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .lien_footer a{
+        color: azure;
+        transition: all 0.5s ease-out;
+    }
+
+    .lien_footer a :hover {
+        color: aqua;
+    }
     /*Mention légales*/
     
     
