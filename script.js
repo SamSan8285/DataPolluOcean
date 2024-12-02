@@ -6,15 +6,48 @@ fetch(
 
 
     const donnees = data.layers[0].features;
-    const donnesTrier = [];
+    const donneesDates = [];
+    const donneesLongitude = [];
+    const donneesLatitude = [];
+    const donneesDensitude = [];
+    const donneesDensitudeText = [];
+    const donneesOceans = [];
+    const allData = [];
+
     donnees.forEach(element => {
-        donnesTrier.push({Date : element.attributes.Date})
-        // Convertir la date timestamp date
+        donneesDates.push({Date : element.attributes.Date})
+                // Convertir la date timestamp date
+        donneesLongitude.push({Longitudes : element.attributes.Longitude})
+        donneesLatitude.push({Latitude : element.attributes.Latitude})
+        donneesDensitude.push({Densitude : element.attributes.DENSRANGE})
+        donneesDensitudeText.push({DensitudeText : element.attributes.DENSTEXT})
+        donneesOceans.push({Oceans : element.attributes.OCEANS})
+
     });
 
-    console.log(donnees);
-    console.log (donnesTrier)
+    donnees.forEach((element) => {
+      // Créer un objet combinant toutes les données pour un élément
+      const dataEntry = {
+        Date: element.attributes.Date,
+        Longitude: element.attributes.Longitude,
+        Latitude: element.attributes.Latitude,
+        Densitude: element.attributes.DENSRANGE,
+        DensitudeText: element.attributes.DENSTEXT,
+        Oceans: element.attributes.OCEANS,
+      };
+      allData.push(dataEntry);
+    });
 
+
+
+    console.log(donnees);
+    console.log (donneesDates)
+    console.log (donneesLongitude)
+    console.log (donneesLatitude)
+    console.log (donneesDensitude)
+    console.log (donneesDensitudeText)
+    console.log (donneesOceans)
+    console.log (allData)
 
     })
 );
