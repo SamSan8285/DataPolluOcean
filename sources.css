@@ -1,4 +1,4 @@
-/* Général */
+
 body {
     font-family: 'Asap', sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     text-align: center;
     background-color: #011826;
@@ -20,7 +20,7 @@ header h1 {
     margin: 0;
 }
 
-/* Main sections */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ main {
     color: #a3d3e8;
 }
 
-/* Retour à l'accueil */
+
 .retour-accueil {
     text-align: right;
     margin: 2rem 3rem;
@@ -82,7 +82,7 @@ main {
     transform: translateY(-2px);
 }
 
-/* Footer */
+
 footer {
     background-color: #000000;
     color: #ffffff;
