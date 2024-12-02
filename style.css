@@ -113,12 +113,23 @@
     /*Mention légales*/
     
     .mention_v1 {
-        height: 75vh;
+        height: 50vh;
         background-color: rgb(202, 226, 235);
     }
 
     .mention_v2 {
-        height: 75vh;
+        height: 50vh;
+    }
+
+    .retour_accueil {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .retour_accueil a {
+        border: 1 solid red;
     }
 
     
