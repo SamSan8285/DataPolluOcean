@@ -112,6 +112,14 @@
     }
     /*Mention légales*/
     
-    
+    .mention_v1 {
+        height: 75vh;
+        background-color: rgb(202, 226, 235);
+    }
+
+    .mention_v2 {
+        height: 75vh;
+    }
+
     
     /*Sources*/
