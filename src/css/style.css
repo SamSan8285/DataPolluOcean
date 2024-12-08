@@ -14,7 +14,7 @@ header {
     height: 120vh;
     justify-content: center;
     align-items: center;
-    background-image: url(/src/assets/img/DataPolluOcean.png);
+    background-image: url(/src/assets/img/DataPolluOcean.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
