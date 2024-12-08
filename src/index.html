@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/root.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Accueil</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Data <br> PolluOcean</h1>
+    </div>
+  </header>
+
+  <section class="bande"></section>
+
+  <main>
+    <!-- Section Pollution Océanique -->
+    <section class="intro">
+      <div class="container-pollue-gauche">
+        <img src="img/tortue.jpg" alt="">
+      </div>
+      <div class="container-pollue-droit">
+        <h2>La Pollution Océanique</h2>
+        <p>Bienvenue sur Data PolluOcean, votre plateforme dédiée à la sensibilisation et à la compréhension de la
+          pollution océanique mondiale. Chaque année, des millions de tonnes de déchets finissent dans nos océans,
+          impactant gravement la faune marine et l'équilibre de notre écosystème. Grâce à des visualisations de données
+          précises et interactives, nous vous invitons à explorer la réalité de cette pollution, à prendre conscience de
+          son ampleur et à découvrir comment les actions humaines influencent l'environnement marin. Notre objectif est
+          d’éduquer, d’informer et de motiver un changement positif pour protéger nos océans.</p>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="video-container">
+        <h2>Vidéo</h2>
+        <!-- TODO ajouter les svgs -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus eligendi temporibus ex
+          voluptatem
+          molestias, minus est ipsam quasi dicta laudantium in, porro earum recusandae iusto perferendis pariatur sint!
+          Ullam repellat neque voluptas sed vel velit quasi fuga facere minus. Atque quo quia quasi consequatur quod
+          eaque
+          eius laboriosam repellendus!</p>
+        <div class="video-wrapper">
+          <video src="video/pollution.mp4" controls></video>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="graphique">
+      <div class="graphique-container">
+        <h2>Pollution Globale</h2>
+        <p>Ce graphique montre la quantité de déchets plastiques rejetés dans les océans par habitant en 2019. En
+          examinant ces données par pays, nous pouvons mieux comprendre l'impact spécifique des populations sur la
+          pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces
+          informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir
+          des initiatives globales de réduction de la pollution plastique.</p>
+        <div class="graph-wrapper">
+          <canvas id="myChart"></canvas>
+          <canvas id="myCharty"></canvas>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cause">
+      <h2 id="cause"> <span id="join">Rejoignez</span> </br> notre cause.</h2>
+      <p>Pour plus d'informations consulter les sites </br> répertoriés dans notre page <a
+          href="sources.html">source</a></p>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
+        datasets: [{
+          label: 'Concentration de Microplastiques au M3',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    const cty = document.getElementById('myCharty');
+
+    new Chart(cty, {
+      type: 'bar',
+      data: {
+        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
+        datasets: [{
+          label: 'Concentration de Microplastiques au M3',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <footer>
+    <!-- Section des icônes sociales -->
+    <div class="social-icons">
+      <!-- Instagram -->
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <!-- Email -->
+      <a href="#" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <!-- YouTube -->
+      <a href="#" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+
+
+
+    <!-- Contenu principal du footer -->
+    <div class="footer-container">
+      <!-- Section des contacts -->
+      <div class="contact-section">
+        <h2>Contacts :</h2>
+        <p>
+          Si vous avez des questions, des suggestions, ou souhaitez en savoir plus sur notre projet, n'hésitez pas à
+          nous contacter via les informations ci-dessous. <br><br>
+          <strong>Email :</strong> <a
+            href="mailto:scolarite.iut@listes.univ-eiffel.fr">scolarite.iut@listes.univ-eiffel.fr</a> <br>
+          <strong>Téléphone :</strong> <a href="tel:+33160957500">01 60 95 75 00</a> <br>
+          <strong>Adresse :</strong> 5 Bd Descartes, 77420 Champs-sur-Marne
+        </p>
+        <p>Merci d'utiliser Data PolluOcean. Ensemble, luttons pour des océans plus propres et un avenir durable.</p>
+      </div>
+
+      <!-- Liens -->
+      <div class="footer-links">
+        <a href="mentions.html">Mentions légales</a>
+        <a href="sources.html">Sources</a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>Copyright 2024, créer par VICTORIA HEDDAD</p>
+    </div>
+  </footer>
+
+
+  <script src="/src/js/script.js"></script>
+</body>
+
+</html>

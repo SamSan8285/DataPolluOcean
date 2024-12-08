@@ -1,0 +1,20 @@
+/** Variables root */
+:root{
+    /* Colors */
+    --white-color: #ffffff;
+    --black-color: #0d0d0d;
+    --source-color : #0d0d0db0;
+
+
+    /* Fonts
+    --main-font: 'Pixelify', sans-serif;
+    --bigtitle-font: 'SilkscreenBold', sans-serif;
+    --title-font: 'SilkscreenRegular', sans-serif; */
+
+    /* Font-size de base */
+    --title-size: 3.5rem;
+    --subtitle-size: 2em;
+    --text-size: 1.2em;
+    --source-size : 0.9rem;
+}
+
