@@ -15,8 +15,10 @@
 
 <body>
   <header>
-    <div>
+    <div class="header-container">
+      <img src="/src/assets/img/Logo.png" alt="" class="logo">
       <h1>Data <br> PolluOcean</h1>
+
     </div>
   </header>
 
@@ -43,12 +45,7 @@
       <div class="video-container">
         <h2>Vidéo</h2>
         <!-- TODO ajouter les svgs -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus eligendi temporibus ex
-          voluptatem
-          molestias, minus est ipsam quasi dicta laudantium in, porro earum recusandae iusto perferendis pariatur sint!
-          Ullam repellat neque voluptas sed vel velit quasi fuga facere minus. Atque quo quia quasi consequatur quod
-          eaque
-          eius laboriosam repellendus!</p>
+        En 2021, on estime entre <strong>75 à 199 millions de tonnes de déchets plastique</strong> avec plus de <strong>24400 milliards de particules</strong> dans les océans</p>
         <div class="video-wrapper">
           <video src="/src/assets/video/pollution.mp4" controls></video>
         </div>
@@ -80,51 +77,6 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    const ctx = document.getElementById('myChart');
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
-        datasets: [{
-          label: 'Concentration de Microplastiques au M3',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
-    const cty = document.getElementById('myCharty');
-
-    new Chart(cty, {
-      type: 'bar',
-      data: {
-        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
-        datasets: [{
-          label: 'Concentration de Microplastiques au M3',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
-
   <footer>
     <!-- Section des icônes sociales -->
     <div class="social-icons">
@@ -148,8 +100,6 @@
         <i class="fa-brands fa-youtube"></i>
       </a>
     </div>
-
-
 
     <!-- Contenu principal du footer -->
     <div class="footer-container">
@@ -182,6 +132,50 @@
 
 
   <script src="/src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
+        datasets: [{
+          label: 'Concentration de Microplastiques au M3',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    const cty = document.getElementById('myCharty');
+
+    new Chart(cty, {
+      type: 'bar',
+      data: {
+        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
+        datasets: [{
+          label: 'Concentration de Microplastiques au M3',
+          data: donneesDensitude,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
