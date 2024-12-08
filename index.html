@@ -21,40 +21,61 @@
   <section class="bande"></section>
 
   <main>
+    <!-- Section Pollution Océanique -->
     <section class="intro">
-      <h2>La Pollution Océanique</h2>
-      <p>Bienvenue sur Data PolluOcean, votre plateforme dédiée à la sensibilisation et à la compréhension de la
-        pollution océanique mondiale. Chaque année, des millions de tonnes de déchets finissent dans nos océans,
-        impactant gravement la faune marine et l'équilibre de notre écosystème. Grâce à des visualisations de données
-        précises et interactives, nous vous invitons à explorer la réalité de cette pollution, à prendre conscience de
-        son ampleur et à découvrir comment les actions humaines influencent l'environnement marin. Notre objectif est
-        d’éduquer, d’informer et de motiver un changement positif pour protéger nos océans.</p>
+      <div class="container-pollue-gauche">
+        <img src="img/tortue.jpg" alt="">
+      </div>
+      <div class="container-pollue-droit">
+        <h2>La Pollution Océanique</h2>
+        <p>Bienvenue sur Data PolluOcean, votre plateforme dédiée à la sensibilisation et à la compréhension de la
+          pollution océanique mondiale. Chaque année, des millions de tonnes de déchets finissent dans nos océans,
+          impactant gravement la faune marine et l'équilibre de notre écosystème. Grâce à des visualisations de données
+          précises et interactives, nous vous invitons à explorer la réalité de cette pollution, à prendre conscience de
+          son ampleur et à découvrir comment les actions humaines influencent l'environnement marin. Notre objectif est
+          d’éduquer, d’informer et de motiver un changement positif pour protéger nos océans.</p>
+      </div>
     </section>
 
     <section class="video">
-      <h2>Vidéo</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus eligendi temporibus ex voluptatem
-        molestias, minus est ipsam quasi dicta laudantium in, porro earum recusandae iusto perferendis pariatur sint!
-        Ullam repellat neque voluptas sed vel velit quasi fuga facere minus. Atque quo quia quasi consequatur quod eaque
-        eius laboriosam repellendus!</p>
-      <video src="video/pollution.mp4" controls width="1200" height="450"></video>
+      <div class="video-container">
+        <h2>Vidéo</h2>
+        <!-- TODO ajouter les svgs -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus eligendi temporibus ex
+          voluptatem
+          molestias, minus est ipsam quasi dicta laudantium in, porro earum recusandae iusto perferendis pariatur sint!
+          Ullam repellat neque voluptas sed vel velit quasi fuga facere minus. Atque quo quia quasi consequatur quod
+          eaque
+          eius laboriosam repellendus!</p>
+        <div class="video-wrapper">
+          <video src="video/pollution.mp4" controls></video>
+        </div>
+      </div>
     </section>
+
 
     <section class="graphique">
-      <h2>Pollution Global</h2>
-      <p>Ce graphique montre la quantité de déchets plastiques rejetés dans les océans par habitant en 2019. En
-        examinant ces données par pays, nous pouvons mieux comprendre l'impact spécifique des populations sur la
-        pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces
-        informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir
-        des initiatives globales de réduction de la pollution plastique.</p>
-      <canvas id="myChart"></canvas>
-      <canvas id="myCharty"></canvas>
+      <div class="graphique-container">
+        <h2>Pollution Globale</h2>
+        <p>Ce graphique montre la quantité de déchets plastiques rejetés dans les océans par habitant en 2019. En
+          examinant ces données par pays, nous pouvons mieux comprendre l'impact spécifique des populations sur la
+          pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces
+          informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir
+          des initiatives globales de réduction de la pollution plastique.</p>
+        <div class="graph-wrapper">
+          <canvas id="myChart"></canvas>
+          <canvas id="myCharty"></canvas>
+        </div>
+      </div>
     </section>
 
+
     <section class="cause">
-      <H2>Rejoignez notre cause</H2>
-      <p>Pour plus d'informations consulter les sites répertorié dans notre page <a href="sources.html">source</a></p>
+      <h2 id="cause"> <span id="join">Rejoignez</span> </br> notre cause.</h2>
+      <p>Pour plus d'informations consulter les sites </br> répertoriés dans notre page <a
+          href="sources.html">source</a></p>
     </section>
+
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

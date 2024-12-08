@@ -56,23 +56,7 @@ video {
     border-radius: 20px;
 }
 
-.graphique {
-    height: 250vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(202, 226, 235);
-    padding: 20px;
-}
 
-.cause {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
 
 /* Footer général */
 footer {
@@ -112,6 +96,177 @@ footer {
 .social-icons a:hover img {
     transform: scale(1.2);
 }
+
+/* Section Pollution Océanique */
+.intro {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-pollue-gauche {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-pollue-gauche img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 30%;
+}
+
+.container-pollue-droit {
+    width: 75%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container-pollue-droit h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.container-pollue-droit p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Section Videos */
+
+.video {
+    background-color: #cee1ea;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections graphique */
+.graphique {
+    background-color: rgb(202, 226, 235);
+    padding: 50px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.graphique-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.graphique-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.graphique-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.graph-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.graph-wrapper canvas {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section cause */
+.cause {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #eaf7f7;
+    text-align: center;
+}
+
+#cause {
+    font-size: 3.5rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.cause p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cause a {
+    text-decoration: underline;
+    color: #007acc;
+    font-weight: 500;
+}
+
+.cause a:hover {
+    color: #005f99;
+}
+
+#join {
+    color: #007acc;
+}
+
+
+
 
 /* Section des contacts */
 .contact-section {
