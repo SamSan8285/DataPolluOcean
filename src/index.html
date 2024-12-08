@@ -131,7 +131,8 @@
   </footer>
 
 
-  <script src="/src/js/script.js"></script>
+  <!-- <script src="/src/js/script.js"></script> -->
+  <script src="/src/js/ratio.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     const ctx = document.getElementById('myChart');
@@ -163,7 +164,7 @@
         labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
         datasets: [{
           label: 'Concentration de Microplastiques au M3',
-          data: donneesDensitude,
+          data: [12, 19, 3, 5, 2, 3],
           borderWidth: 1
         }]
       },
