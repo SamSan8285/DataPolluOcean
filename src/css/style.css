@@ -11,27 +11,30 @@
 
 header {
     display: flex;
-    height: 120vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background-image: url(/src/assets/img/DataPolluOcean.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
-.container {
+.header-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 50%;
 }
+
 
 .container h1 {
     margin-left: 30px;
 }
 
-.bande {
+/* .bande {
     height: 10vh;
     background-color: black;
-}
+} */
 
 .intro {
     height: 100vh;
