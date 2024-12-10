@@ -61,10 +61,47 @@
           pollution océanique mondiale et les différences significatives dans la gestion des déchets plastiques. Ces
           informations sont essentielles pour identifier les régions nécessitant des solutions immédiates et promouvoir
           des initiatives globales de réduction de la pollution plastique.</p>
-        <div class="graph-wrapper">
-          <canvas id="myChart"></canvas>
-          <canvas id="myCharty"></canvas>
-        </div>
+          <div>
+            <h2>Pollution des Océans</h2>
+            <!-- Graphique pour les océans -->
+            <canvas id="oceanChart" width="400" height="150"></canvas>
+            <br>
+            <!-- Liste déroulante pour les océans -->
+            <select id="oceanSelector">
+              <option value="0">Océan Amériques</option>
+              <option value="1">Océan Asie</option>
+              <option value="2">Océan Chine</option>
+              <option value="3">Océan Europe</option>
+              <option value="4">Océan Inde</option>
+              <option value="5">Océan Moyen-Orient & Afrique du Nord</option>
+              <option value="6">Océan Océanie</option>
+              <option value="7">Océan Afrique Subsaharienne</option>
+              <option value="8">Océan États-Unis</option>
+              <option value="9">Océan Monde/Total</option>
+            </select>
+          </div>
+        
+          <br>
+        
+          <div>
+            <h2>Pollution des Lacs et Rivières</h2>
+            <!-- Graphique pour les lacs/rivières -->
+            <canvas id="lakesRiversChart" width="400" height="150"></canvas>
+            <br>
+            <!-- Liste déroulante pour les lacs/rivières -->
+            <select id="lakesRiversSelector">
+              <option value="0">Lacs/Rivières Amériques</option>
+              <option value="1">Lacs/Rivières Asie</option>
+              <option value="2">Lacs/Rivières Chine</option>
+              <option value="3">Lacs/Rivières Europe</option>
+              <option value="4">Lacs/Rivières Inde</option>
+              <option value="5">Lacs/Rivières Moyen-Orient & Afrique du Nord</option>
+              <option value="6">Lacs/Rivières Océanie</option>
+              <option value="7">Lacs/Rivières Afrique Subsaharienne</option>
+              <option value="8">Lacs/Rivières États-Unis</option>
+              <option value="9">Lacs/Rivières Monde/Total</option>
+            </select>
+          </div>
       </div>
     </section>
 
@@ -132,50 +169,10 @@
 
 
   <!-- <script src="/src/js/script.js"></script> -->
-  <script src="/src/js/ratio.js"></script> 
+  <script src="js/ratio.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    const ctx = document.getElementById('myChart');
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
-        datasets: [{
-          label: 'Concentration de Microplastiques au M3',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
-    const cty = document.getElementById('myCharty');
-
-    new Chart(cty, {
-      type: 'bar',
-      data: {
-        labels: ['Pacifique', 'Atlantique', 'Indien', 'Antartique', 'Artique'],
-        datasets: [{
-          label: 'Concentration de Microplastiques au M3',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
+   
   </script>
 </body>
 
