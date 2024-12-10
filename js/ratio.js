@@ -38,19 +38,19 @@ document.addEventListener("DOMContentLoaded", function () {
           worldPlasticProductionValues
         );
   
-        // Calculer les ratios lorsque toutes les données sont disponibles
+        // Calculer les ratios 
         if (
           oceanPlasticLeakageValues.length > 0 &&
           riversLakesPlasticLeakageValues.length > 0
         ) {
           const oceanRatios = oceanPlasticLeakageValues.map((value, index) => {
-            const production = worldPlasticProductionValues[index] || 1; // Éviter la division par zéro
+            const production = worldPlasticProductionValues[index] || 1; 
             return value / production;
           });
   
           const lakesRiversRatios = riversLakesPlasticLeakageValues.map(
             (value, index) => {
-              const production = worldPlasticProductionValues[index] || 1; // Éviter la division par zéro
+              const production = worldPlasticProductionValues[index] || 1; 
               return value / production;
             }
           );
@@ -119,15 +119,15 @@ document.addEventListener("DOMContentLoaded", function () {
               }]
             }
           });
-  
-          // Mettre à jour le graphique des océans en fonction du choix de l'utilisateur
+
+          //change le graphique en fonction du bouton 
           document.getElementById('oceanSelector').addEventListener('change', function(event) {
             const selectedIndex = event.target.value;
             oceanChart.data.datasets[0].data = ratioOceans[selectedIndex];
             oceanChart.update();
           });
   
-          // Mettre à jour le graphique des lacs/rivières en fonction du choix de l'utilisateur
+          //change le graphique en fonction du bouton 
           document.getElementById('lakesRiversSelector').addEventListener('change', function(event) {
             const selectedIndex = event.target.value;
             lakesRiversChart.data.datasets[0].data = ratioLakesRivers[selectedIndex];
