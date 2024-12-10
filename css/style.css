@@ -7,8 +7,6 @@
 }
 
 
-
-
 header {
     height: 100vh;
 }
@@ -86,7 +84,7 @@ video {
 footer {
     background-color: #011826;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: var(--text-size);
     padding: 2rem 0 0 0;
 }
 
