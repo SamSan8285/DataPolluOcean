@@ -75,6 +75,70 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 console.log("Ratios for Ocean Plastic Leakage:", oceanRatios);
                 console.log("Ratios for Lakes and Rivers Plastic Leakage:", lakesRiversRatios);
+                
+ // Premier graphique ratio Océan
+ const ratioOamericas = oceanRatios.slice(0, 19);
+ console.log("Ocean Americas:",ratioOamericas);
+ 
+ const ratioOasia = oceanRatios.slice(20, 39);
+ console.log("Ocean Asia:",ratioOasia);
+ 
+ const ratioOchina = oceanRatios.slice(40, 59);
+ console.log("Ocean China:",ratioOchina);
+ 
+ const ratioOeurope = oceanRatios.slice(60, 79);
+ console.log("Ocean Europe:",ratioOeurope);
+ 
+ const ratioOindia = oceanRatios.slice(80, 99);
+ console.log("Ocean India:",ratioOindia);
+ 
+ const ratioOENafrica = oceanRatios.slice(100, 119);
+ console.log("Ocean Middle East & North Africa:",ratioOENafrica);
+ 
+ const ratioOoceania = oceanRatios.slice(120, 139);
+ console.log("Ocean Oceania:",ratioOoceania);
+ 
+ const ratioOSSafrica = oceanRatios.slice(140, 159);
+ console.log("Ocean Sub-Saharan Africa:",ratioOSSafrica);
+ 
+ const ratioOUS = oceanRatios.slice(160, 179);
+ console.log("Ocean United-States:",ratioOUS);
+ 
+ const ratioOW = oceanRatios.slice(180, 199);
+ console.log("Ocean World/Total:",ratioOW);
+ 
+         // Deuxième graphique ratio lac rivière
+ const ratioLRamericas = lakesRiversRatios.slice(0, 19);
+ console.log("Lac/Riv Americas:",ratioLRamericas);
+         
+ const ratioLRasia = lakesRiversRatios.slice(20, 39);
+ console.log("Lac/Riv Asia:",ratioLRasia);
+         
+ const ratioLRchina = lakesRiversRatios.slice(40, 59);
+ console.log("Lac/Riv China:",ratioLRchina);
+         
+ const ratioLReurope = lakesRiversRatios.slice(60, 79);
+ console.log("Lac/Riv Europe:",ratioLReurope);
+         
+ const ratioLRindia = lakesRiversRatios.slice(80, 99);
+ console.log("Lac/Riv India:",ratioLRindia);
+         
+ const ratioLRENafrica = lakesRiversRatios.slice(100, 119);
+ console.log("Lac/Riv Middle East & North Africa:",ratioLRENafrica);
+         
+ const ratioLRoceania = lakesRiversRatios.slice(120, 139);
+ console.table("Lac/Riv Oceania:",ratioLRoceania);
+         
+ const ratioLRSSafrica = lakesRiversRatios.slice(140, 159);
+ console.table("Lac/Riv Sub-Saharan Africa:",ratioLRSSafrica);
+         
+ const ratioLRUS = lakesRiversRatios.slice(160, 179);
+ console.table("Lac/Riv United-States:",ratioLRUS);
+         
+ const ratioLRW = lakesRiversRatios.slice(180, 199);
+ console.table("Lac/Riv World/Total:",ratioLRW);
+ 
+
             }
         });
 });
