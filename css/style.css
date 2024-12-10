@@ -10,31 +10,52 @@
 
 
 header {
-    display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/src/assets/img/DataPolluOcean.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.background-element{
+    position: relative;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
+.corner {
+    position:absolute;
+    z-index: 0;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+
+
+}
+
+.algues-top-left{
+    top: 0%;
+    left: 0;
+}
+.algues-top-right{
+    top: 0;
+    right: 0;
+}
+.algues-bottom-left{
+    bottom: 0;
+    left: 0;
+}
+.algues-bottom-right{
+    bottom: 0;
+    right: 0;
+}
 
 .container h1 {
     margin-left: 30px;
 }
 
-/* .bande {
-    height: 10vh;
-    background-color: black;
-} */
+
 
 .intro {
     height: 100vh;
