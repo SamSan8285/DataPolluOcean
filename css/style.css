@@ -100,7 +100,7 @@ header {
 
 .video {
     display: flex;
-    height: 100vh;
+    height: fit-content;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -111,7 +111,38 @@ video {
     border-radius: 20px;
 }
 
+.Quizz {
+    height: 100vh;
+    background-image: url(../assets/img/quizz-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.quizz-container {
+    max-width: 1000px;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.809);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 1px 10px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 10px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 12px 1px rgba(0,0,0,0.75);
+}
+
+.quizz-container p {
+    max-width: 100%;
+    padding: 8px;
+    margin: 8px;
+}
 
 /* Footer général */
 footer {
@@ -234,8 +265,10 @@ footer {
     background-color: rgb(202, 226, 235);
     padding: 50px 20px;
     text-align: center;
-    height: 100vh;
+    /* max-width: 1200px; */
+    height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -243,6 +276,7 @@ footer {
 .graphique-container {
     max-width: 1200px;
     margin: 0 auto;
+    height: fit-content;
 }
 
 .graphique-container h2 {
