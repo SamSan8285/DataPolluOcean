@@ -56,12 +56,14 @@ document.querySelector('.quizz-LR').addEventListener('click',function(e){
 document.querySelector('.bonne_reponse').style.display='block'
 document.querySelector('.bonne_reponse').style.color='green'
 document.querySelector('.close_reponse').style.display='block'
+document.querySelector('.mauvaise_reponse').style.display='none'
 });
 
 document.querySelector('.quizz-Oceans').addEventListener('click',function(e){
 document.querySelector('.mauvaise_reponse').style.display='block'
 document.querySelector('.mauvaise_reponse').style.color='red'
 document.querySelector('.close_reponse').style.display='block'
+document.querySelector('.bonne_reponse').style.display='none'
 });
 
 document.querySelector('.close_reponse').addEventListener('click',function(e){
