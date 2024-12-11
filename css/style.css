@@ -445,5 +445,12 @@ footer {
     line-height: 2.5rem;
 }
 
+.bonne_reponse {
+    display: none;
+}
+
+.mauvaise_reponse {
+    display: none;
+}
 
 /*Sources*/

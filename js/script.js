@@ -51,3 +51,17 @@ fetch(
 
     })
 );
+
+document.querySelector('.quizz-LR').addEventListener('click',function(e){
+document.querySelector('.bonne_reponse').style.display='block'
+
+});
+
+
+
+document.querySelector('.quizz-Oceans').addEventListener('click',function(e){
+document.querySelector('.mauvaise_reponse').style.display='block'
+  
+});
+
+
