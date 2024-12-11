@@ -43,18 +43,36 @@ header {
 
 .corner {
     position:absolute;
-    z-index: 0;
+    z-index: 2;
     margin: 0;
 }
 
 .algues-top-left{
     top: -20px;
-    left: 0;
+    left: -45px;
 }
 .algues-top-right{
-    top: -20px;
+    top: -30px;
     right: 0;
 }
+
+.solo-top-right{
+    right: 50px;
+}
+#solo-bottom-left-lefty{
+    left: -50px;
+    z-index: 1;
+
+}
+#solo-bottom-left-mid{
+    left: 150px;
+    z-index: 1;
+}
+#solo-bottom-left-righty{
+    left: 150px;
+    z-index: 1;
+}
+
 .algues-bottom-left{
     bottom: 0;
     left: 0;
