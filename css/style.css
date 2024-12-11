@@ -1,3 +1,5 @@
+
+
 /*Index.html*/
 *,
 *::after,
@@ -6,7 +8,14 @@
     box-sizing: border-box;
 }
 
+h2, h3 {
+    font-family: "Fredoka", sans-serif;
+}
 
+p {
+    font-family: "Asap", sans-serif;
+
+}
 header {
     height: 100vh;
 }
@@ -26,18 +35,14 @@ header {
     position:absolute;
     z-index: 0;
     margin: 0;
-    height: fit-content;
-    width: fit-content;
-
-
 }
 
 .algues-top-left{
-    top: 0%;
+    top: -20px;
     left: 0;
 }
 .algues-top-right{
-    top: 0;
+    top: -20px;
     right: 0;
 }
 .algues-bottom-left{
