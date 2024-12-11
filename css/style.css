@@ -1,5 +1,3 @@
-
-
 /*Index.html*/
 *,
 *::after,
@@ -8,16 +6,25 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-size: var(--title-size);
+}
 h2, h3 {
     font-family: "Fredoka", sans-serif;
+    font-size: var(--subtitle-size);
 }
 
 p {
     font-family: "Asap", sans-serif;
+    font-size: var(--text-size);
+    max-width: 800px;
 
 }
 header {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-element{
@@ -28,8 +35,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-right: 100px
 }
+
+
 
 .corner {
     position:absolute;
@@ -152,17 +162,13 @@ footer {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: justify;
 }
 
 .container-pollue-droit h2 {
-    font-size: 4rem;
     margin-bottom: 15px;
 }
 
 .container-pollue-droit p {
-    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -302,22 +308,23 @@ footer {
 }
 
 .contact-section h2 {
-    font-size: 1.5rem;
     color: #66d8ff;
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 .contact-section p {
-    line-height: 1.6;
+    line-height: 1.5;
     color: #d4e6f1;
+    font-size: 1.2rem;
 }
 
 .contact-section a {
     color: #66d8ff;
-    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
+
 
 .contact-section a:hover {
     color: #a3d3e8;
@@ -330,14 +337,19 @@ footer {
     text-align: right;
 }
 
+.footer-copyright p{
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .footer-links a {
     color: #66d8ff;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease-in-out;
+    font-family: "Asap", sans-serif;
 }
 
 .footer-links a:hover {
@@ -349,7 +361,6 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-    font-size: 0.9rem;
     margin-top: 2rem;
     width: 100%;
 }
@@ -362,10 +373,10 @@ footer {
 }
 
 .social-icons a {
-    text-decoration: none;
     color: #66d8ff;
     font-size: 2.5rem;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: "Asap", sans-serif;
 }
 
 .social-icons a:hover {
