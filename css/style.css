@@ -356,11 +356,12 @@ footer {
 .conclusion {
   display: flex;
   height: 100vh;
+  justify-content: flex-end;
 }
 
 .conclusion-container {
   height: 100vh;
-  width: 80%;
+  max-width: 800px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
