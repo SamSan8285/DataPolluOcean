@@ -370,6 +370,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+  margin-left: 200px;
+  margin-bottom: 100px;
 }
 
 .titre-conclusion {
