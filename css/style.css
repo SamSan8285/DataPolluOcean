@@ -251,8 +251,9 @@ footer {
 }
 
 .container-pollue-droit {
-  width: 75%;
+  width: 100%;
   padding: 40px;
+  margin-left: 350px;
   display: flex;
   flex-direction: column;
 }
@@ -334,6 +335,7 @@ footer {
 .graphique-container p {
   font-size: 1.2rem;
   line-height: 1.6;
+  margin-left: 240px;
   margin-bottom: 30px;
   text-align: left;
 }
@@ -358,6 +360,7 @@ footer {
 .conclusion {
   display: flex;
   position: relative;
+  align-items: center;
   height: 100vh;
   justify-content: flex-end;
 }
@@ -379,7 +382,7 @@ footer {
   margin-left: auto;
 }
 .conclusion-container p {
-  margin: 24px;
+  margin-left: 100px;
   /* line-height: 2rem; */
 }
 
