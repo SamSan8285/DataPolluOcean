@@ -125,6 +125,7 @@ header {
 
 .video {
   display: flex;
+  position: relative;
   height: fit-content;
   justify-content: space-around;
   align-items: center;
