@@ -9,9 +9,13 @@
 h1{
     font-size: var(--title-size);
 }
-h2, h3 {
+h2{
     font-family: "Fredoka", sans-serif;
     font-size: var(--subtitle-size);
+}
+h3{
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.9rem;
 }
 
 p {
@@ -124,13 +128,14 @@ video {
 
 .quizz-container {
     max-width: 1000px;
-    height: 800px;
+    max-height: fit-content;
     background-color: rgba(255, 255, 255, 0.809);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 50px;
     margin: 16px;
     padding: 16px;
     box-shadow: 1px 10px 12px 1px rgba(0,0,0,0.75);
@@ -139,10 +144,28 @@ video {
 }
 
 .quizz-container p {
-    max-width: 100%;
     padding: 8px;
-    margin: 8px;
+    margin-left: 50px;
 }
+
+.button-style{
+    margin: 16px;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: #005f99;
+    color: white;
+    font-family:"Asap", sans-serif;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
 
 /* Footer général */
 footer {
@@ -271,8 +294,12 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
-
+.Chart{
+    max-width: 1200px;
+    max-height: 800px;
+}
 .graphique-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -288,7 +315,7 @@ footer {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 30px;
-    text-align: justify;
+    text-align: left;
 }
 
 .graph-wrapper {
@@ -308,9 +335,54 @@ footer {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.conclusion{
+    display: flex;
+    height: 100vh;
+}
+
+.conclusion-container {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titre-conclusion{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.conclusion-container p{
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2rem;
+}
+
+.wave-element{
+    float: right;
+    height:100%;
+    z-index: 0;
+}
+.wave-container{
+    position: relative;
+    width:40%;
+    height:100%;
+}
+.baleine-absolute{
+    top: 30%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.octopus-absolute{
+    top: 65%;
+    left: 42%;
+}
 /* Section cause */
 .cause {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +394,6 @@ footer {
 
 #cause {
     font-size: 3.5rem;
-    font-family: 'Arial', sans-serif;
     font-weight: bold;
     color: #000;
     margin-bottom: 20px;
@@ -330,7 +401,6 @@ footer {
 
 .cause p {
     font-size: 1.2rem;
-    font-family: 'Arial', sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;

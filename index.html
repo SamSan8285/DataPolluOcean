@@ -54,14 +54,14 @@
         <img src="./assets/img/tortue.jpg" alt="">
       </div>
       <div class="container-pollue-droit">
-        <h2>La pollution des eaux</h2>
+        <h2>Présensation de notre site</h2>
         <p>Bienvenue sur Data PolluOcean, votre plateforme dédiée à la sensibilisation et à la compréhension de la pollution des eaux mondiale. Chaque année, des millions de tonnes de déchets finissent dans nos lacs, nos rivières et nos océans, impactant gravement la faune marine et l’équilibre de notre écosystème. Explorez Data PolluOcean, la plateforme qui vous dévoile les enjeux et solutions face à la pollution des eaux pour préserver notre planète</p>
       </div>
     </section>
 
     <section class="video">
       <div class="video-container">
-        <h2>Vidéo</h2>
+        <h2>Vidéo de sensibilisation</h2>
         <!-- TODO ajouter les svgs -->
         <p>Saviez-vous qu'environ <strong>8 millions de tonnes de plastique finissent dans les océans chaque année</strong>, menaçant gravement la faune marine et les écosystèmes ? Découvrez cette vidéo de la chaîne YouTube <strong>Un Océan de Vie</strong>, qui sensibilise sur les conséquences de cette pollution et les actions nécessaires pour protéger nos mers.</p>
         <div class="video-wrapper">
@@ -72,9 +72,12 @@
 
     <section class="Quizz">
       <div class="quizz-container">
-        <h2>À votre avis, où finit la majorité du plastique que nous gaspillons ?</h2>
-        <button class="quizz-LR">Les Lacs et Rivières</button>
-        <button class="quizz-Oceans">Les Océans</button>
+        <h2>Petite question 🤔</h2>
+        <h3>À votre avis, où finit la majorité du plastique que nous gaspillons ? 🧐</h3>
+        <div class="btn">
+          <button class="quizz-LR button-style">Les Lacs et Rivières</button>
+          <button class="quizz-Oceans button-style">Les Océans</button>
+        </div>
 
         <div class="bonne_reponse">
           <h3>Bonne réponse : </h3>
@@ -86,7 +89,7 @@
           <p> Eh non, la bonne réponse était "les rivières et les lacs", dommage ! 😞 Malheureusement, une grande partie du plastique gaspillé se retrouve dans ces cours d’eau, sur 338 millions de tonnes de plastique produites en 2012, 79 millions de tonnes ont été jetées dans les rivières et les lacs, contre seulement 19 millions dans les océans.</p>
         </div>
 
-        <button class="close_reponse">
+        <button class="close_reponse button-style">
           masquer la réponse
         </button>
       </div>
@@ -95,12 +98,12 @@
 
     <section class="graphique">
       <div class="graphique-container">
-        <h2>Pollution Globale</h2>
+        <h2>Mise en contexte des graphiques</h2>
         <p>Les graphiques suivants montrent les pourcentages de plastique gaspillé dans les lacs, les rivières et les océans par rapport à la production totale de plastique de 2000 à 2018. Comme mentionné plus haut, la majorité du plastique gaspillé finit dans les rivières et les lacs. En 2018, le plastique jeté dans ces cours d’eau représentait 24 % de la production totale annuelle, tandis que le plastique jeté dans les océans représentait 6,5 %.</p>
           <div>
             <h2>Pollution des Océans</h2>
             <!-- Graphique pour les océans -->
-            <canvas id="oceanChart" width="400" height="150"></canvas>
+            <canvas id="oceanChart" class="Chart"></canvas>
             <br>
             <!-- Liste déroulante pour les océans -->
             <select id="oceanSelector">
@@ -122,7 +125,7 @@
           <div>
             <h2>Pollution des Lacs et Rivières</h2>
             <!-- Graphique pour les lacs/rivières -->
-            <canvas id="lakesRiversChart" width="400" height="150"></canvas>
+            <canvas id="lakesRiversChart"></canvas>
             <br>
             <!-- Liste déroulante pour les lacs/rivières -->
             <select id="lakesRiversSelector">
@@ -139,11 +142,16 @@
             </select>
           </div>
       </div>
+    </section>
 
-      <div class="text_conclusion">
+    <section class="conclusion">
+      <div class="conclusion-container">
+        <h2 class="titre-conclusion">En conclusion</h2>
         <p>
-          Comme vous l’avez constaté, une part non négligeable du plastique produit chaque année est gaspillée dans les rivières, les lacs et les océans. Ce chiffre ne cesse d’augmenter, avec des conséquences graves, non seulement pour notre planète, mais aussi pour notre mode de vie :
-          <br>
+          <span class="br">
+            Comme vous l’avez constaté, une part non négligeable du plastique produit chaque année est gaspillée dans les rivières, les lacs et les océans. Ce chiffre ne cesse d’augmenter, avec des conséquences graves, non seulement pour notre planète, mais aussi pour notre mode de vie :
+          </span>
+          <br  />
           Contamination de l’eau potable, 
           Propagation de maladies, 
           Dégradation des ressources alimentaires,
@@ -158,7 +166,14 @@
           Merci pour votre lecture et à bientôt sur Data PolluOcean ! 🌊
         </p>
       </div>
-    </section>
+      <div class="wave-container">
+        <img src="./assets/img/wave.svg" alt="" class="wave-element">
+        <img src="./assets/img/baleine_plastique.png" alt="" class="corner baleine-absolute">
+        <img src="./assets/img/octopus_plastique.png" alt="" class="corner octopus-absolute">
+      </div>
+  </section>
+
+
 
 
     <section class="cause">   
@@ -166,7 +181,6 @@
       <p>Pour plus d'informations consulter les sites </br> répertoriés dans notre page <a
           href="sources.html">source</a></p>
     </section>
-
   </main>
 
   <footer>
